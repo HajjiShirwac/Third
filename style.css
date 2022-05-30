@@ -27,6 +27,15 @@ body{
 
 /*ends here helper classes */
 
+/* Clearfix starts here */
+.clearfix::before,.clearfix::after{
+    content:"";
+    clear: both;
+    display: table;
+
+}
+/* Clearfix Ends here */
+
 .header{
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), 
@@ -69,6 +78,7 @@ body{
     outline: 0.3rem solid var(--secondaryColor);
     outline-offset: 4px;
     transition: var(--mainTransition);
+    margin-top: 20px;
 }
 
 .main-btn,
@@ -187,6 +197,57 @@ body{
 }
 
 
-
-
 /* End Specials */
+
+/* About */
+.section-center{
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.about-img,.about-info{
+    padding: 2rem 0;
+}
+.about-picture-container{
+    background: var(--secondaryColor);
+    border: 0.5rem solid var(--secondaryColor);
+    border-radius: 1rem;
+    overflow: hidden;
+
+
+}
+.about-picture{
+    width: 100%;
+    display: block;
+    transition: var(--mainTransition);
+
+}
+.about-picture-container:hover .about-picture{
+    opacity: 0.7;
+    transform: scale(1.2);
+}
+.section-subtitle{
+    font-size: 2rem;
+    font-family: var(--macondoText);
+    letter-spacing: var(--letterSpacing);
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+}
+.section-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.about-text{
+    margin: 1rem 0;
+    max-width: 26rem;
+}
+@media screen and (min-width:992px){
+    .about-img,.about-info{
+        float: left;
+        width: 50%;
+        padding: 2rem;
+    }
+}
+
+/* About Ends Here */
