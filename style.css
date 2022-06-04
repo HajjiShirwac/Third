@@ -21,9 +21,9 @@ body{
 
 }
 /* helper classes */
-    /* a{
-    
-    } */
+  .text-white{
+      color: var(--mainWhite);
+  }
 
 /*ends here helper classes */
 
@@ -35,6 +35,27 @@ body{
 
 }
 /* Clearfix Ends here */
+
+
+/* Global Variables */
+.section-center{
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section-subtitle{
+    font-size: 2rem;
+    font-family: var(--macondoText);
+    letter-spacing: var(--letterSpacing);
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+}
+.section-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+/* Global Variable Ends Here */
 
 .header{
     min-height: 100vh;
@@ -139,8 +160,7 @@ body{
     background: linear-gradient( to left, 
     var(--primaryColor),
     var(--secondaryColor),
-    var(--primaryColor)
-    );
+    var(--primaryColor));
 }
 /* content-divider  ends here*/
 /* Specials */
@@ -200,12 +220,7 @@ body{
 /* End Specials */
 
 /* About */
-.section-center{
-    padding: 4rem 0;
-    width: 80vw;
-    max-width: 1170px;
-    margin: 0 auto;
-}
+
 .about-img,.about-info{
     padding: 2rem 0;
 }
@@ -227,17 +242,7 @@ body{
     opacity: 0.7;
     transform: scale(1.2);
 }
-.section-subtitle{
-    font-size: 2rem;
-    font-family: var(--macondoText);
-    letter-spacing: var(--letterSpacing);
-    text-transform: uppercase;
-    color: var(--secondaryColor);
-}
-.section-title{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
+
 .about-text{
     margin: 1rem 0;
     max-width: 26rem;
@@ -251,3 +256,70 @@ body{
 }
 
 /* About Ends Here */
+/* Products Starts Here */
+.products{
+    background: var(--mainDark);
+
+}
+.products-info,
+.products-inventory{
+    padding: 2rem;
+
+}
+.products-text{
+    color: var(--mainWhite);
+    max-width: 20rem;
+    margin: 1rem 0;
+}
+.product{
+    padding: 2rem 0;
+}
+.products-img{
+    width: 100%;
+    display: block;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+}
+.product-title{
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1rem;
+
+}
+.product-price{
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    font-family: var(--macondoText);
+
+}
+@media screen and (min-width:768px){
+    .product{
+        float: left;
+        width: 50%;
+        padding: 2rem 1rem;
+    }
+    
+}
+@media screen and (min-width:992px){
+    .product{
+        width: 33.3%;
+    }
+  
+}
+@media screen and (min-width:1200px){
+    .products-info{
+        float: left;
+        width: 30%;
+
+    }
+    .products-inventory{
+        float: left;
+        width: 70%;
+    }
+    .product{
+        padding:1.5rem 1rem 0rem 1rem;
+    }
+}
+
+/* Products Ends Here */
