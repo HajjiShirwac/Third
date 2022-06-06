@@ -24,6 +24,9 @@ body{
   .text-white{
       color: var(--mainWhite);
   }
+  a{
+      text-decoration: none;
+  }
 
 /*ends here helper classes */
 
